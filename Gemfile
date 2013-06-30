@@ -43,6 +43,8 @@ end
 
 group :test, :development do 
   gem 'minitest-rails'
+  gem 'zeus-parallel_tests'
+  gem 'factory_girl_rails'
 end
 
 group :test do

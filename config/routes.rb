@@ -1,4 +1,13 @@
 Harmless::Application.routes.draw do
+  devise_for :users
+  get "static/home"
+  get "static/about"
+  get "static/contact"
+  get "static/privacy"
+  get "static/terms"
+  get "static/help"
+
+  root 'static#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
