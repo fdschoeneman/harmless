@@ -1,111 +1,56 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %meta{:charset => "utf-8"}/
-    %title Typica - Awesome Bootstrap template
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %meta{:content => "Responsive HTML template for Your company", :name => "description"}/
-    %meta{:content => "Oskar Żabik (oskar.zabik@gmail.com)", :name => "author"}/
-    / Le styles
-    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
-    %link{:href => "css/bootstrap-responsive.min.css", :rel => "stylesheet"}/
-    %link{:href => "css/typica.css", :rel => "stylesheet"}/
-    / Le HTML5 shim, for IE6-8 support of HTML5 elements
-    /[if lt IE 9]
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    / Le favicon
-    %link{:href => "favicon.ico", :rel => "shortcut icon"}/
-  %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.brand{:href => "index.html"}
-            = image_tag "logo.png"
-          .nav-collapse
-            %ul.nav.pull-right
-              %li
-                %a{:href => "index.html"} Home
-              %li
-                %a{:href => "about.html"} About
-              %li
-                %a{:href => "portfolio.html"} Portfolio
-              %li
-                %a{:href => "blog_fullwidth.html"} Blog
-              %li
-                %a{:href => "pricing.html"} Pricing
-              %li
-                %a{:href => "contact.html"} Contact
-          / /.nav-collapse
-    %iframe.hidden-phone{:frameborder => "0", :height => "450", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/?ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=40.052282,86.572266&amp;t=m&amp;z=4&amp;output=embed"}
-    .container
-      .row
-        .span4
-          .page-header.center
-            %h2 Any questions?
-            %p Here you can see frequently asked question. If  you cant find an answer, You know what to do.
-          %h4 How much do web projects cost?
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elitanim id est laborum.
-          %h4 How long does a project take to finish?
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elitanim id est laborum.
-          %h4 Can you sign our confidentiality agreement?
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elitanim id est laborum.
-          %h4 Lorem ipsum dolor?
-          %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-        .span8
-          .row
-            .span4.contact-info
-              .page-header
-                %h2 Contact us
-                %p Lets stay in touch. You can contact us using information below, or using contact form on this page.
-              %h4 Visit us
-              %p 1111-A Nowhere Lane
-              %p Outta Sight, State 90378
-              %hr/
-              %h4 Contact via email
-              %p
-                %a{:href => "#"}
-                  %i.icon-envelope
-                  email@email.com
-              %hr/
-              %h4 Call/fax us
-              %p
-                +00 12 3456 7890
-                %br/
-                %small ask for Mike
-              %p +00 12 3456 7890
-            .span4
-              .page-header.center
-                %h2 Contact form
-                %p You can even write about wheather. We really want to talk with you!
-              %form{:action => "post"}
-                %label{:for => "name"}/
-                %p Your name
-                %input#name{:type => "text"}/
-                %label{:for => "email"}/
-                %p Your email
-                %input#email{:type => "text"}/
-                %label{:for => "message"}/
-                %p Your message
-                %textarea#message.span4{:cols => "30", :name => "message", :placeholder => "Type here...", :rows => "10"}
-                %br/
-                %button.btn.btn-success{:type => "submit"} Send
-    %footer
-      .container
-        / COPYRIGHTS
-        %p.pull-left Typica - Bootstrap template crafted with passion
-        %p.pull-right
-          %a{:href => "#"} Back to top
-    /
-      Le javascript
-      \==================================================
-    / Placed at the end of the document so the pages load faster
-    %script{:src => "js/jquery.js"}
-    %script{:src => "js/bootstrap.js"}
-    %script{:src => "js/plugins.js"}
-    %script{:src => "js/setup.js"}
+%body
+  %iframe.hidden-phone{:frameborder => "0", :height => "450", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.com/?ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=40.052282,86.572266&amp;t=m&amp;z=4&amp;output=embed"}
+  .container
+    .row
+      .span4
+        .page-header.center
+          %h2 Any questions?
+          %p Here you can see frequently asked question. If  you cant find an answer, You know what to do.
+        %h4 How much do web projects cost?
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elitanim id est laborum.
+        %h4 How long does a project take to finish?
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elitanim id est laborum.
+        %h4 Can you sign our confidentiality agreement?
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elitanim id est laborum.
+        %h4 Lorem ipsum dolor?
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+      .span8
+        .row
+          .span4.contact-info
+            .page-header
+              %h2 Contact us
+              %p Lets stay in touch. You can contact us using information below, or using contact form on this page.
+            %h4 Visit us
+            %p 1111-A Nowhere Lane
+            %p Outta Sight, State 90378
+            %hr/
+            %h4 Contact via email
+            %p
+              %a{:href => "#"}
+                %i.icon-envelope
+                email@email.com
+            %hr/
+            %h4 Call/fax us
+            %p
+              +00 12 3456 7890
+              %br/
+              %small ask for Mike
+            %p +00 12 3456 7890
+          .span4
+            .page-header.center
+              %h2 Contact form
+              %p You can even write about wheather. We really want to talk with you!
+            %form{:action => "post"}
+              %label{:for => "name"}/
+              %p Your name
+              %input#name{:type => "text"}/
+              %label{:for => "email"}/
+              %p Your email
+              %input#email{:type => "text"}/
+              %label{:for => "message"}/
+              %p Your message
+              %textarea#message.span4{:cols => "30", :name => "message", :placeholder => "Type here...", :rows => "10"}
+              %br/
+              %button.btn.btn-success{:type => "submit"} Send
