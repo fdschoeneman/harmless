@@ -15,4 +15,3 @@
 //= require bootstrap
 //= require plugins
 //= require setup
-//= require_tree .

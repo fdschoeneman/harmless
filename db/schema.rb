@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130630232620) do
+ActiveRecord::Schema.define(version: 20130701064915) do
+
+  create_table "communities", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "nearest_town"
+    t.string   "population"
+    t.string   "practices"
+    t.string   "cuisine"
+    t.string   "religions"
+    t.string   "languages"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                             default: "", null: false

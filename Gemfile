@@ -41,6 +41,8 @@ gem 'devise_invitable',
     github: 'scambra/devise_invitable', 
     branch: 'rails4'
 
+# cleaner require statements
+gem 'require_all'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -59,6 +61,11 @@ group :test, :development do
 end
 
 group :test do
+
+  # use given framework of given/when/then with minitest
+  gem 'minitest-given'
+  # gem 'minitest-rails-shoulda'# , '~> 0.4.1'
+
 
   # guards
   gem 'guard'

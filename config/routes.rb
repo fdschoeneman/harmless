@@ -1,4 +1,6 @@
 Harmless::Application.routes.draw do
+  resources :communities
+
   devise_for :users
   get "static/home"
   get "static/index"
