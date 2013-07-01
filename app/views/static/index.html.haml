@@ -1,0 +1,117 @@
+.slider-block
+  #myCarousel.carousel.slide
+    / Carousel items
+    .carousel-inner
+      .active.item
+        / %img{:alt => "Someimage", :src => "img/slide_bg2.jpg"}/
+        = image_tag "img/slide_bg2.jpg"
+        .caption.middle-left.container
+          %p.small.white.text-dark Introducing
+          %p.medium.white.text-pink Bootstrap based template
+          %p.large.pink.add-space TYPICA
+      .item
+        = image_tag "img/slide_bg1.jpg"
+        .caption.bottom-right.container
+          %p.large.pink.add-space Better carousel
+          %p.small.white Multiple text & background colors
+          %p.small.white Multiple caption positions
+          %p.medium.white.text-pink and much more!
+      .item
+        = image_tag "img/slide_bg3.jpg"
+        .caption.top-right.container
+          %p.medium.pink.add-space Isn't that just
+          %p.large.white.text-dark AWESOME?
+    / Carousel nav
+    %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
+    %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
+.hero-unit
+  .container
+    .row
+      .span12
+        %h1
+          Crafted with
+          %strong.pink LOVE
+.container
+  / TESTIMONIALS 3col
+  .row.testimonials
+    .span4
+      = image_tag "img/testimonials_placeholder.png"
+      %h2 Lorem ipsum
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    .span4
+      = image_tag "img/testimonials_placeholder.png"
+      %h2 Quis nostrud
+      %p
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+    .span4
+      = image_tag "img/testimonials_placeholder.png"
+      %h2 Cupidatat non proident
+      %p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  .section-title
+    %h2 Typica is fully featured HTML template based on Bootstrap
+  / TESTIMONIALS 4col
+  .row.testimonials
+    .span3
+      = image_tag "img/testimonials_placeholder.png"
+      %h2 Lorem ipsum
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    .span3
+      = image_tag "img/testimonials_placeholder.png"
+      %h2 Quis nostrud
+      %p
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+    .span3
+      = image_tag "img/testimonials_placeholder.png"
+    
+      %h2 Cupidatat non proident
+      %p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .span3
+      = image_tag "img/testimonials_placeholder.png"
+      %h2 Quis nostrud
+      %p
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+/ .container
+.hero-unit
+  .container
+    .row
+      .span12
+        %h1 Who are we?
+.container
+  .team
+    .row
+      .span4.section-title.horizontal-left
+        %h2
+          Team members
+          %i.icon-chevron-right
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        .btn.btn-large.pull-right Know more &raquo;
+      .span8
+        .row
+          .span2.item
+            .circle-thumbnail
+              = image_tag "img/team/1.jpg"
+            %h2 Kathy Jackson
+            %p Incididunt ut labore et dolore magna aliqua.
+          .span2.item
+            .circle-thumbnail
+              = image_tag "img/team/2.jpg"
+            %h2 Erin Fields
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor.
+          .span2.item
+            .circle-thumbnail
+              = image_tag "img/team/3.jpg"
+            %h2 Steven Jones
+            %p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+          .span2.item
+            .circle-thumbnail
+              = image_tag "img/team/4.jpg"
+            %h2 Jan Kowalski
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    / /container

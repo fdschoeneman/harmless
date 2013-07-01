@@ -14,6 +14,12 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# haml
+gem 'haml-rails'
+gem 'html2haml'
+
+# bootstrap stylesheets & javascripts
+gem 'bootstrap-sass'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -42,13 +48,22 @@ group :doc do
 end
 
 group :test, :development do 
+  # minitest
   gem 'minitest-rails'
-  gem 'zeus-parallel_tests'
+  gem 'minitest-rails-capybara'
   gem 'factory_girl_rails'
+  gem 'zeus-parallel_tests'
+  
+  # test infrastructure
+  gem 'guard-livereload'
 end
 
 group :test do
-  gem 'minitest-rails-capybara'
+
+  # guards
+  gem 'guard'
+
+
 end
 
 

@@ -1,11 +1,16 @@
 Harmless::Application.routes.draw do
   devise_for :users
   get "static/home"
+  get "static/index"
   get "static/about"
   get "static/contact"
   get "static/privacy"
   get "static/terms"
   get "static/help"
+  get "static/blog_fullwidth"
+  get "static/blog_single"
+  get "static/portfolio"
+  get "static/pricing"
 
   root 'static#home'
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,19 @@
+%meta{:charset => "utf-8"}/
+%title Typica - Awesome Bootstrap template
+%meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+%meta{:content => "Responsive HTML template for Your company", :name => "description"}/
+%meta{:content => "Oskar Żabik (oskar.zabik@gmail.com)", :name => "author"}/
+
+%title Harmless
+= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+= javascript_include_tag "application", "data-turbolinks-track" => true, defer: "defer"
+= csrf_meta_tags
+/ Le styles
+/ %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
+/ %link{:href => "css/bootstrap-responsive.min.css", :rel => "stylesheet"}/
+/ %link{:href => "css/typica.css", :rel => "stylesheet"}/
+/ Le HTML5 shim, for IE6-8 support of HTML5 elements
+/[if lt IE 9]
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+/ Le favicon
+= favicon_link_tag "favicon.ico"

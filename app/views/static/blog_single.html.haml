@@ -1,0 +1,148 @@
+%body
+  .hero-unit
+    .container
+      .row
+        .span6
+          %h2
+            %small You are reading:
+            %br/
+            Lorem ipsum dolor sir amet
+          %button.btn.btn-large Back to BLOG
+        .span6
+          .row
+            .span3
+              %a.thumbnail.previous-post{:href => "#"}
+                = image_tag "testimonials_placeholder.png"
+              %h4
+                %small Previous post
+                Lorem ipsum dolor sir amet non omnis moriar et cera.
+            .span3
+              %a.thumbnail.next-post{:href => "#"}
+                = image_tag "img/testimonials_placeholder.png", class: "hidden-phone"
+              %h4
+                %small Next post
+                Lorem ipsum dolor sir amet non omnis moriar et cera.
+  .container.blog-wrap.post-info-left
+    %article.row.blog-item.blog-item-single
+      .span2
+        %aside
+          .date-wrapper
+            %span.published
+              %time{:datetime => "2011-01-12"}
+                %p.day.pull-left 12
+                %p.month.pull-right JAN 2012
+            .clearfix
+          .postedby
+            %h4
+              %i.icon-user
+              Author:
+            %p.author-name
+              %a{:href => "#"} John Smith
+          .post-tags
+            %h4
+              %i.icon-tags
+              Tags:
+            %ul
+              %li
+                %a{:href => "#", :rel => "tag"}
+                  %span.label Tag1
+              %li
+                %a{:href => "#", :rel => "tag"}
+                  %span.label tag2
+              %li
+                %a{:href => "#", :rel => "tag"}
+                  %span.label tag3
+              %li
+                %a{:href => "#", :rel => "tag"}
+                  %span.label tag4
+          .comments
+            %h4
+              %i.icon-comment
+              Comments
+            %p.comments-count
+              %a{:href => "#"} 4
+      / .span2
+      .span10
+        %h2
+          Lorem ipsum dolor sir amet
+          %small Integer posuere erat
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        = image_tag "slide_bg2.jpg"
+        %blockquote
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.
+          %small Someone famous
+        %p
+          Consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+      / .span10
+    / COMMENTS
+    .row
+      .span10.offset2
+        %h2 Comments
+        %ol.comments-list.comments-main-list
+          %li
+            .comment
+              = image_tag "testimonials_placeholder.png", size: "50x50", class: "avatar"
+              .comment-author John Doe
+              .comment-date 12 Jul 2012
+              %p.comment-content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.
+              %a.comment-reply{:href => "#"} Reply
+            %ol.comments-list.comment-reply
+              %li
+                .comment
+                  = image_tag "img/testimonials_placeholder.png", size: "50x50", class: "avatar"
+                  .comment-author John Doe
+                  .comment-date 12 Jul 2012
+                  %p.comment-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.
+                  %a.comment-reply{:href => "#"} Reply
+                %ol.comments-list.comment-reply
+                  %li
+                    .comment
+                      = image_tag "img/testimonials_placeholder.png", size: "50x50", class: "avatar"
+                      .comment-author John Doe
+                      .comment-date 12 Jul 2012
+                      %p.comment-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.
+                      %a.comment-reply{:href => "#"} Reply
+              %li
+                .comment
+                  = image_tag "img/testimonials_placeholder.png", size: "50x50", class: "avatar"
+                  .comment-author John Doe
+                  .comment-date 12 Jul 2012
+                  %p.comment-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.
+                  %a.comment-reply{:href => "#"} Reply
+          %li
+            .comment
+              = image_tag "img/testimonials_placeholder.png", size: "50x50", class: "avatar"
+              .comment-author John Doe
+              .comment-date 12 Jul 2012
+              %p.comment-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.
+              %a.comment-reply{:href => "#"} Reply
+          %li
+            .comment
+              = image_tag "img/testimonials_placeholder.png", size: "50x50", class: "avatar"
+              .comment-author John Doe
+              .comment-date 12 Jul 2012
+              %p.comment-content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.
+              %a.comment-reply{:href => "#"} Reply
+        / COMMENT FORM
+        %h2 Add comment
+        %p Comments are moderated by the Administrator. Please, use proper language and keep the conversation going. Spam comments will be deleted immediately.
+        %form.form-inline.form-horizontal{:action => "#", :method => "post"}
+          .span10
+            .row.commenter-info
+              %input#name.span2{:name => "name", :placeholder => "Name", :tabindex => "1", :type => "text", :value => ""}/
+              %input#name.span2{:name => "name", :placeholder => "Email", :tabindex => "2", :type => "text", :value => ""}/
+              %input#name.span2{:name => "name", :placeholder => "Website (optional)", :tabindex => "3", :type => "text", :value => ""}/
+          %div
+            %textarea#textarea.span10{:cols => "100", :name => "textarea", :placeholder => "Your comment...", :rows => "8", :tabindex => "4"}
+          %div
+            %input.btn.btn-danger.comment-button{:type => "submit", :value => "Add comment"}/
