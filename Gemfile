@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 
@@ -67,13 +67,14 @@ group :test do
   gem 'minitest-given'
   # gem 'minitest-rails-shoulda'# , '~> 0.4.1'
 
-
   # guards
   gem 'guard'
-
-
 end
 
+group :production do 
+  gem 'rails_12factor', group: :production
+
+end
 
 
 # Use ActiveModel has_secure_password
