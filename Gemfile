@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 
@@ -50,24 +50,31 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test, :development do 
+group :tools do 
+
+  gem 'libnotify'
+  gem 'rb-inotify'
+
   # minitest
-  gem 'minitest-rails'
-  gem 'minitest-rails-capybara'
+  # gem 'minitest'
+  # gem 'minitest-rails'
+  # gem 'minitest-rails-capybara'
+  # gem 'minitest-given'
   gem 'factory_girl_rails'
-  gem 'zeus-parallel_tests'
-  
-  # test infrastructure
+
+  # gem 'zeus-parallel_tests'
+  gem 'zeus'
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-minitest', github: 'guard/guard-minitest'
+  
+  # test infrastructure
 
 end
 
 group :test do
 
   # use given framework of given/when/then with minitest
-  gem 'minitest-given'
   # gem 'minitest-rails-shoulda'# , '~> 0.4.1'
 
   # guards

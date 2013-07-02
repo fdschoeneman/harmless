@@ -3,7 +3,7 @@ require "test_helper"
 describe User do
   
   before do
-    @user = User.new
+    @user = User.new 
   end
 
   it "must be valid" do
