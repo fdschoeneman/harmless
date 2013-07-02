@@ -58,7 +58,10 @@ group :test, :development do
   gem 'zeus-parallel_tests'
   
   # test infrastructure
+  gem 'guard'
   gem 'guard-livereload'
+  gem 'guard-minitest', github: 'guard/guard-minitest'
+
 end
 
 group :test do
@@ -68,7 +71,6 @@ group :test do
   # gem 'minitest-rails-shoulda'# , '~> 0.4.1'
 
   # guards
-  gem 'guard'
 end
 
 group :production do 

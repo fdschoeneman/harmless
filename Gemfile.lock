@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/guard/guard-minitest.git
+  revision: f13d0ec2a59cd11d1b400f2db62445c6092ee112
+  specs:
+    guard-minitest (1.0.0.rc.3)
+      guard (>= 1.8)
+      minitest (>= 2.1)
+
+GIT
   remote: git://github.com/scambra/devise_invitable.git
   revision: 506c4bbc18bfa5461d79f77d4b272a0b47be3a23
   branch: rails4
@@ -249,6 +257,7 @@ DEPENDENCIES
   factory_girl_rails
   guard
   guard-livereload
+  guard-minitest!
   haml-rails
   html2haml
   jbuilder (~> 1.2)

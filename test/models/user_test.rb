@@ -1,6 +1,7 @@
 require "test_helper"
 
 describe User do
+  
   before do
     @user = User.new
   end

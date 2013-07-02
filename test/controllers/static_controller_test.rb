@@ -1,12 +1,12 @@
 require "test_helper"
 
 describe StaticController do
-  it "should get home" do
+  it "should get home" do 
     get :home
     assert_response :success
   end
 
-  it "should get about" do
+  it "should get a bout" do  
     get :about
     assert_response :success
   end
