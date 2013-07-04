@@ -56,14 +56,13 @@ group :development, :test do
   gem 'rb-inotify'
 
   gem 'turn'
-  # minitest
+  gem 'minitest'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
+  gem 'minitest-given'
   gem 'factory_girl_rails'
   gem 'wrong'
-  gem 'minitest-given'
 
-  # gem 'zeus-parallel_tests'
   gem 'guard'
   gem 'guard-minitest', github: 'guard/guard-minitest'
   gem 'guard-livereload'

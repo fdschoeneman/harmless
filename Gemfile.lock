@@ -261,6 +261,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   libnotify
+  minitest
   minitest-given
   minitest-rails
   minitest-rails-capybara
