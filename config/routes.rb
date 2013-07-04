@@ -9,6 +9,8 @@ Harmless::Application.routes.draw do
   get "static/privacy"
   get "static/terms"
   get "static/help"
+   get "help" => "static#help"
+
   get "static/blog_fullwidth"
   get "static/blog_single"
   get "static/portfolio"

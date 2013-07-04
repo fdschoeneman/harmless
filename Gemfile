@@ -43,30 +43,30 @@ gem 'devise_invitable',
     branch: 'rails4'
 
 # cleaner require statements
-gem 'require_all'
+# gem 'require_all'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
-group :tools do 
+group :development, :test do 
 
   gem 'libnotify'
   gem 'rb-inotify'
 
+  gem 'turn'
   # minitest
-  # gem 'minitest'
-  # gem 'minitest-rails'
-  # gem 'minitest-rails-capybara'
-  # gem 'minitest-given'
+  gem 'minitest-rails'
+  gem 'minitest-rails-capybara'
   gem 'factory_girl_rails'
+  gem 'minitest-given'
 
   # gem 'zeus-parallel_tests'
-  gem 'zeus'
   gem 'guard'
-  gem 'guard-livereload'
   gem 'guard-minitest', github: 'guard/guard-minitest'
+  gem 'guard-livereload'
+  gem 'zeus'
   
   # test infrastructure
 
