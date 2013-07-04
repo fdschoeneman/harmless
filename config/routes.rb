@@ -2,14 +2,12 @@ Harmless::Application.routes.draw do
   resources :communities
 
   devise_for :users
-  get "static/home"
-  get "static/index"
-  get "static/about"
-  get "static/contact"
-  get "static/privacy"
-  get "static/terms"
-  get "static/help"
-   get "help" => "static#help"
+  get "contact" => "static#contact"
+  get "help" => "static#help"
+  get "privacy" => "static#privacy"
+  get "terms" => "static#terms"
+  get "about" => "static#about"
+
 
   get "static/blog_fullwidth"
   get "static/blog_single"

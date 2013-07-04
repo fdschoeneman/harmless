@@ -1,9 +1,9 @@
+require "minitest/given"
 require "test_helper"
-require 'minitest/given'
 
 describe User do
   
-  context "assertions" do 
+  describe "assertions" do 
 
     Given(:user) { FactoryGirl.build(:user) }
     Then { user.valid?.must_equal true }
